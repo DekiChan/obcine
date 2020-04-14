@@ -1,0 +1,10 @@
+RPE_PE
+
+src/.cache
+src/dist
+src/node_modules
+
+*.ZIP
+*.zip
+*.pdf
+*.qgz

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="si">
+    <head>
+        <title>Slovenske občine</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+
+            #content {
+                display: flex;
+                flex-flow: column;
+                height: 100%;
+            }
+
+            #header {
+                background-color: green;
+                color: white;
+                padding: 25px;
+            }
+
+            #map {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div id="header">
+                <h1>Zemljevid slovenskih občin</h1>
+            </div>
+
+            <div id="map" class="map"></div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
