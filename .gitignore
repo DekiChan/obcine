@@ -4,6 +4,9 @@ src/.cache
 src/dist
 src/node_modules
 
+.cache
+dist
+
 *.ZIP
 *.zip
 *.pdf

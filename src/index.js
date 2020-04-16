@@ -17,6 +17,7 @@ import obcineJson from '../data/obcine.geojson';
 // COSTANTS
 const POPUP_ID = "popup";
 const MAP_CENTER = [1655360.12, 5793576.89];
+const MESTNA = "D";
 
 // LAYERS
 const tileLayer = new TileLayer({
@@ -85,10 +86,12 @@ function mapClickHandler(evt) {
 
     let name = obcina.get('OB_UIME');
     let area = obcina.get('POV_KM2');
+    let mestna = obcina.get('OB_TIP') == MESTNA ? 'DA' : 'NE';
 
     element.innerHTML = `
         <h3>${name}</h3>
         <p>Površina: ${area} km2</p>
+        <p>Mestna: ${mestna}</p>
     `;
 
     popup.setPosition(coordinate);
