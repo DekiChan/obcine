@@ -32,12 +32,23 @@
                 background-color: whitesmoke;
                 padding: 5px;
             }
+
+            .hide {
+                display: none;
+            }
         </style>
     </head>
     <body>
         <div id="content">
             <div id="header">
                 <h1>Zemljevid slovenskih občin</h1>
+                <div id="position">
+                    <div class="available hide">
+                        Trenutno se nahajate v občini <span id="obcina-name"></span>. Vaše koordinate so <span id="loc-lat"></span>, <span id="loc-lon"></span>.
+                    </div>
+                    <div class="outside hide">Trenutno ste izven Slovenije.</div>
+                    <div class="unavailable">Vaše lokacije ni bilo možno določiti.</div>
+                </div>
             </div>
 
             <div id="map" class="map"></div>
